@@ -33,8 +33,11 @@ String isPalindromS(String userNum)
         return "нет";
 }
 
+<<<<<<< HEAD
 // Во втором случае метод будет работать с числами,
 // а не символами строки.
+=======
+>>>>>>> 3319498d0642aae09033fa87515907ff445cc334
 String isPalindromN(String userNum)
 {
     // Метод, который определяет палиндром работая
