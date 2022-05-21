@@ -43,4 +43,4 @@ double distance(int[] firPoint, int[] secPoint)
     return Math.Sqrt(result);
 }
 
-Console.WriteLine(Convert.ToString(distance(firstPoint, secondPoint)));
+Console.WriteLine(distance(firstPoint, secondPoint));
