@@ -23,7 +23,7 @@ else
 // Этот алгоритм можно оформить в виде метода.
 // Для разнообразия этот метод будет с возвращаемым
 // значением (в прошлой ДЗ все были void).
-String isPalindrom(String userNum)
+String isPalindromS(String userNum)
 {
     if (userNumber[0] == userNumber[4] &&
         userNumber[1] == userNumber[3])
@@ -31,4 +31,27 @@ String isPalindrom(String userNum)
     else 
         return "нет";
 }
-Console.WriteLine(isPalindrom(userNumber));
+
+String isPalindromN(String userNum)
+{
+    // Метод, который определяет палиндром работая
+    // с числом.
+    int userNumber = Convert.ToInt32(userNum);
+    int[] numbers = new int[5]; //Массив для записи цифр числа
+    int i = 4;
+    while(userNumber > 0) 
+    {
+        // Разложение числа на цифры.
+        numbers[i] = userNumber % 10;
+        userNumber /= 10;
+        i--;
+    }
+    if (numbers[0] == numbers[4] &&
+        numbers[1] == numbers[3])
+        return "да";
+    else 
+        return "нет";
+}
+
+Console.WriteLine(isPalindromS(userNumber));
+Console.WriteLine(isPalindromN(userNumber));
